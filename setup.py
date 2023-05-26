@@ -1,8 +1,8 @@
+from os import path
+
 from setuptools import setup
 
 REQUIREMENTS = ['pytest', 'six']
-
-from os import path
 
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), 'rb') as f:
@@ -33,5 +33,5 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-  ],
+    ],
 )
