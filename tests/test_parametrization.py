@@ -1,3 +1,5 @@
+from typing import Union
+
 from parametrization import Parametrization
 
 
@@ -11,7 +13,7 @@ from parametrization import Parametrization
     name='with_a',
     a='a',
 )
-def test_default_parameters(a, b):
+def test_default_parameters(a: Union[str, int], b: int) -> None:
     assert a == 'a' or a == 2
     assert b == 3
 
@@ -26,5 +28,5 @@ def test_default_parameters(a, b):
     a='C',
     b='D',
 )
-def test_name_as_callable(a, b):
+def test_name_as_callable(a: str, b: str) -> None:
     assert a != b

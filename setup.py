@@ -3,6 +3,7 @@ from setuptools import setup
 REQUIREMENTS = ['pytest', 'six']
 
 from os import path
+
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), 'rb') as f:
     long_description = f.read().decode('utf8')
